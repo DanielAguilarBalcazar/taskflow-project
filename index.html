@@ -8,26 +8,29 @@
 <body>
 <aside>
 <header>
-    <h1>To Do List</h1>
+    <h1>To Do</h1>
 </header>
 </aside>
 <main>
     <section class="container">
         <div class="input-container">
-            <input type="text" id="taskInput" placeholder="Que tenia que hacer...">
+            <label>
+
+            <input type="text" id="taskInput" placeholder="Que Tenia Que Hacer...?">
             <select id="categorySelect">
-                <option value="personal">Personal</option>
-                <option value="trabajo">Trabajo</option>
-                <option value="estudio">Estudio</option>
+
+                <option value="Personal">Personal</option>
+                <option value="Trabajo">Trabajo</option>
+                <option value="Estudio">Estudio</option>
             </select>
 
             <select id="prioritySelect">
-                <option value="high">High</option>
-                <option value="medium">Medium</option>
-                <option value="low">Low</option>
+                <option value="Esencial">Esencial</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Opcional">Opcional</option>
             </select>
-
-            <button id="addTaskButton">Add</button>
+            </label>
+            <button id="addTaskButton">+</button>
         </div>
         <ul id="taskList"></ul>
     </section>

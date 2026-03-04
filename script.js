@@ -6,6 +6,8 @@
  const categorySelect = document.getElementById('categorySelect');
  const prioritySelect = document.getElementById('prioritySelect');
 
+
+
  window.onload = () => {
      const tasks = getTasks();
      if (tasks && tasks.length > 0) {
@@ -29,21 +31,24 @@
  function addTaskToList(taskText, category, priority) {
      const li = document.createElement('li');
 
-     // Texto de la tarea
+     const checkbox = document.createElement ('input');
+     checkbox.type = 'checkbox';
+     checkbox.className = 'task-checkbox';
+
      const taskSpan = document.createElement('span');
      taskSpan.textContent = taskText;
 
-     // Badge de categoría
+
      const categoryBadge = document.createElement('span');
      categoryBadge.textContent = category;
      categoryBadge.className = 'badge ' + category;
 
-     // Badge de prioridad
+
      const priorityBadge = document.createElement('span');
      priorityBadge.textContent = priority;
      priorityBadge.className = 'badge priority-' + priority;
 
-     // Botón eliminar
+
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
      removeButton.className = 'remove-button';
