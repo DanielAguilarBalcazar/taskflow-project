@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="css/Styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Todo-App</title>
+</head>
+<body>
+<aside>
+<header>
+    <h1>To Do List</h1>
+</header>
+</aside>
+<main>
+    <section class="container">
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Que tenia que hacer...">
+            <select id="categorySelect">
+                <option value="personal">Personal</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="estudio">Estudio</option>
+            </select>
+
+            <select id="prioritySelect">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <button id="addTaskButton">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
