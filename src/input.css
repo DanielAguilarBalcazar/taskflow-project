@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo-letter {
+    @apply inline-block transition-all duration-300 cursor-default;
+  }
+
+  .logo-letter:hover {
+    @apply text-white scale-125 -translate-y-1;
+    text-shadow:
+      0 0 10px #ffffff,
+      0 0 20px #ffffff,
+      0 0 30px #ffffff,
+      0 0 40px #ffffff,
+      0 0 50px #ffffff,
+      2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glow 1.5s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow:
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "taskflow-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
