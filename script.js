@@ -39,7 +39,7 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-/
+
 addTaskButton.addEventListener('click', () => {
     const taskText = taskInput.value.trim();
     const category = categorySelect.value;
@@ -171,10 +171,10 @@ searchInput.addEventListener('input', (e) => {
 
     if (visibleCount === 0 && tasks.length > 0) {
         emptyState.classList.remove('hidden');
-        emptyState.querySelector('p').textContent = '🔍 No se encontraron tareas';
+        emptyState.querySelector('p').textContent = ' No se encontraron tareas';
     } else if (tasks.length === 0) {
         emptyState.classList.remove('hidden');
-        emptyState.querySelector('p').textContent = '📝 No hay tareas aún';
+        emptyState.querySelector('p').textContent = ' No hay tareas aún';
     } else {
         emptyState.classList.add('hidden');
     }
